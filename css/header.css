@@ -50,6 +50,12 @@ html {
         display: flex;
         justify-content: space-between;
     }
+    .menu-toggle {
+      display: none; /*  чекбокс */
+    }
+    .menu-toggle:checked + label + .dropdown-content {
+    display: block;
+    }
     .dropdown-content a{
       opacity: 0.62;
       color: #88e2d6;

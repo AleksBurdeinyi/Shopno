@@ -1,0 +1,74 @@
+/* ===== ANIMATION===== */
+.preload {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    font-size: 75px;
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    top: 50%;
+   left: 50%;
+   overflow: hidden;
+   transform: translate(-50%, -50%);
+   background-color: #1e1f2d;
+   animation: fadeOut 14s forwards;
+}
+@keyframes glowing {
+   0%, 100% { color: rgb(207, 150, 25); text-shadow: 0 0 8px rgb(255, 255, 255); }
+   50% { color: #eee; text-shadow: 0 0 20px white; }
+ }
+@keyframes rotateAround {
+   0% {
+     transform: translate(var(--x), var(--y)) rotate(360deg);
+     opacity: 0.01;
+   }
+   100% {
+     transform: translateX(0) translateY(0) rotate(0deg);
+     opacity: 1;
+   }
+ }
+ 
+@keyframes showMainContent {
+0% { visibility: hidden; opacity: 0; }
+100% { visibility: visible; opacity: 1; }
+}
+@keyframes fadeOut {
+0% { opacity: 1; }
+99% { opacity: 0; }
+100% { opacity: 0; visibility: hidden; }
+}
+.preload span {
+display: inline-block;
+position: relative;
+color: rgb(198, 193, 30);
+--x: 0px;
+--y: 0px;
+opacity: 1;
+
+animation: rotateAround 5s forwards, glowing 3s infinite alternate;
+}
+#main-content {
+visibility: hidden; 
+opacity: 0;
+animation: showMainContent 0s 8s forwards;
+}
+
+
+
+.span1:nth-child(1) { --x: -500px; --y: -500px; } 
+.span2:nth-child(2) { --x: 500px; --y: 500px; } 
+.span3:nth-child(3) { --x: -500px; --y: 500px; } 
+.span4:nth-child(4) { --x: -500px; --y: 0; }   
+.span5:nth-child(5) { --x: 250px; --y: -250px; }
+.span6:nth-child(6) { --x: 0; --y: 250px; }
+.span7:nth-child(7) { --x: 250px; --y: 350px; }
+/* Робимо для всіх екранів меньше,щоб було по центру */
+@media (max-width: 768px) {
+.preload {
+font-size: 40px; 
+gap: 20px;
+height: 50px; 
+
+}
+}

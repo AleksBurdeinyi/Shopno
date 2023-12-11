@@ -1,0 +1,151 @@
+        .box4{
+                text-align: center;
+        }
+        .block4{
+          padding-top: 4.5%;
+          max-width: 1140px;
+          
+          width: 90%;
+          margin: 0 auto;
+          position: relative;
+
+        }
+        /* IMG-coment*/
+        .galery2 {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr); 
+          gap: 10px; 
+        }
+        .galery_img {
+          position: relative; 
+          
+        }
+        @media (max-width: 800px) {
+          .galery2 {
+            grid-template-columns: repeat(2, 1fr); /* Змінюємо на дві колонки */
+          }
+        }
+        @media (max-width: 500px) {
+          .galery2 {
+            grid-template-columns: 1fr; /* Змінюємо на одну колонку */
+          }
+        }
+        .galery_img img {
+          width: 100%; /* Забезпечуємо, щоб картинки займали всю ширину колонки */
+          height: auto; /* Зберігаємо пропорції картинок */
+        }
+        
+        .galery_img1 img {
+          width: 100%; /* Забезпечуємо, щоб картинки займали всю ширину колонки */
+          height: auto; /* Зберігаємо пропорції картинок */
+        }
+        
+        /* Медіа-запит для екранів, де може поміститись тільки дві картинки в ряд */
+        @media (max-width: 800px) {
+          .galery_img1 {
+            grid-template-columns: repeat(2, 1fr); /* Змінюємо на дві колонки */
+          }
+        }
+        
+        /* Медіа-запит для екранів, де поміщається тільки одна картинка в ряд */
+        @media (max-width: 500px) {
+          .galery_img1 {
+            grid-template-columns: 1fr; /* Змінюємо на одну колонку */
+          }
+          .img_p{
+            font: 400 1.325rem/3.6 'Montserrat', sans-serif;
+          }
+          .galery_img-coment .image-text__title1{
+            font: 700 2.25rem/1.2 Merriweather, serif;
+          }
+          .galery_img-coment .image-tex__title2{
+            font-size: 1.8rem;
+          }
+        }
+        .image-text__a img {
+          max-width: 100%; 
+          height: auto; 
+          display: block; 
+        }
+        
+        .image-text__a {
+          display: inline-block; /* Змінюємо відображення посилань на inline-block */
+          margin: 3%; /* Відступи для посилань */
+          width: auto; 
+        }
+      
+      .galery_img-coment {
+        max-width: 335px;
+        width: 80%;
+        height: 55%;
+        box-shadow: 3px 6px 16px rgba(20, 20, 21, 0.18);
+        background-color: #6df6eb;
+        opacity: 0.98;
+        position: absolute;
+        left: 5%;
+        bottom: 5%;
+        text-align:left;
+        padding: 11.84% 4.26%;
+        opacity: 0;
+        transition: 2s opacity; 
+      }
+      .galery_img-coment::before {
+        content: '';
+        width: 0;
+        height: 0;
+        border: 20px solid transparent;
+        border-bottom-color: #6df6eb;
+        position: absolute;
+        top: -36px;
+        left: 20px;
+    }
+      
+      .galery_img:hover .galery_img-coment {
+        display: block; /* Показуємо комментар при наведення мишки*/
+        
+      }
+      
+      .image-text__title1{
+      opacity: 0.95;
+      font: 700 1.25rem/1.2 Merriweather, serif;
+      color: #272727;
+      }
+      .img_p{
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+      }
+      .image-tex__title2{
+                color: #767070;
+              font-size: 0.937rem;
+              font-weight: 400;
+                font-style: italic;
+      }
+      .galery_img:hover .galery_img-coment {
+        opacity: 1; 
+      }
+      /*Section5*/
+      
+    /* box6_ label */
+    .box6{
+      text-align: center;
+      
+      
+      background-color: rgb(255, 255, 255);
+
+    }
+    .block6{
+          padding-top: 4.5%;
+            max-width: 1140px;
+            
+
+          
+          width: 90%;
+          margin: 0 auto;
+          position: relative;
+          padding-bottom: 4.5%;
+          
+
+  }

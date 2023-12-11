@@ -1,0 +1,209 @@
+.footer{
+                width: 100%;
+                height: auto;
+                background: url("../img/winter.webp") no-repeat;
+                background-size: cover;
+}
+.block7{
+                padding-top: 4.5%;
+                max-width: 1140px;
+                width: 90%;
+                margin: 0 auto;
+                position: relative;
+                text-align: center;
+                display: flex;      
+                align-items: stretch; /* Заставляем дочерние элементы растягиваться на всю высоту */
+                flex-wrap: wrap;
+}
+.footer-line{
+                margin-bottom: 3.5px;
+}
+
+.block7-left-form{
+                width: 57.2%;
+                max-width: 614px;
+                background-color: rgb(2 22 35 / 71%);
+                text-align: left;
+                padding: 7% 3% 0;
+                margin-bottom: 11%;
+                display: inline-block;
+}
+
+.footer-line-name {
+                opacity: 0.6;
+                color: #ffffff;
+                font: 400 0.937rem/3.4 Raleway, sans-serif;
+}
+
+.footer-line-input{
+                border: none;
+                background-color: rgba(0, 0, 0, 0);
+                color: #ffffff;
+                font: 400 0.937rem Raleway, sans-serif;
+                width: 88%;
+                resize: none;
+                transition: border-color 0.3s;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+
+.footer-line-input:focus{
+                outline:none; 
+                border-bottom: 2px solid rgb(19, 175, 236);
+                width: 88%;
+}
+
+
+/* Стилі для нижн лін при фокусі на любому input */
+
+
+
+.button_left{
+                border-radius: 2px;
+                background-color: #6eeee4;
+                color: #000000;
+                font: 400  1.125rem/1.555 'Montserrat', sans-serif;
+                text-transform: uppercase;
+                padding: 2% 5%;
+                border: none;
+                margin-top:8%;
+                margin-bottom: 4%;
+}
+.button_left:hover{
+                background-color: #6df6eb;
+                transition: 1s;
+                color:white;
+}
+
+.adres{
+                opacity: 0.7;
+                color: #ffffff;
+                font: 400 0.937rem/1.6 Raleway, sans-serif;
+                margin-bottom: 4.56%;
+}
+.block7-right{
+                width: 42%;
+                background-color: rgb(2 22 35 / 71%);
+                text-align: left;
+                display: inline-block;
+                padding: 3%;
+                margin-bottom: 11%;
+}
+.map{
+                width: 100%;
+}
+iframe {
+                width: 100%;
+                height: 16rem;
+}
+@media (max-width: 850px){
+    .block7-right {
+                width: 80%;
+                margin-bottom: 10.78%;
+    }
+}
+@media (max-width: 850px){
+    .block7-left-form {
+                width: 80%;
+                max-width: 900px;
+}
+    .block7{
+                justify-content: center;
+}
+}
+@media (min-width: 850px) {
+    .block7 {
+                display: flex;
+                flex-wrap: nowrap; /* Не переносить элементы на новую строку */
+                gap: 50px; /* Добавляет пространство между элементами */
+}
+    .block7-right{
+                margin-bottom: 11%;
+}
+    .block7-left-form, 
+    .block7-right {
+                flex: 1; /* Каждый блок займет равную ширину */
+                height: auto; /* Высота будет определяться содержимым */
+                max-height: none; /* Убираем ограничение максимальной высоты, если оно есть */
+}
+
+
+    .block7-left-form, 
+    .block7-right {
+                align-self: stretch; /* для доступн висоти*/
+}
+}
+
+.block8-botom{
+                background-color: #262b2e;
+                text-align: center;
+}
+.botom-text{
+                padding-top: 3.5%;
+                color: #ffffff;
+                font: 400 1rem/1.562 Raleway, sans-serif;
+                text-transform: uppercase;
+}
+.bottom-link{
+                width: 45px;
+                height: 45px;
+                background-color: #021623;
+                opacity: 0.9;
+                display: inline-flex;
+}
+.bottom-link i{
+                margin: auto;
+                color:whitesmoke;
+}
+.bottom-link:hover{
+                background-color: #91ebe1;
+}
+.botom2-text{
+                opacity: 0.6;
+                color: #a3a3a3;
+                font: 400 1.125rem/1.555 'Montserrat', sans-serif;
+                text-transform: uppercase;
+                padding-top: 2%;
+                padding-bottom: 5%;
+
+}
+#scrollUp, #scrollDown {
+                position: fixed;
+                right: 20px;
+                z-index: 1000;
+                background-color: #0b385cb8;
+                color: #7cbcc0;
+                padding: 1%;
+                border-radius: 25px;
+}
+
+#scrollUp {
+                bottom: 80px; /* Місце кнопки  "Вверх" */
+}
+
+#scrollDown {
+                bottom: 20px; /* Місце кнопки "Вниз" */
+}
+#scrollUp:hover, #scrollDown:hover {
+                background-color: #8fc5e4;
+                color: white;
+                transition: 1s;
+}
+@media (min-width: 1670px) {
+#scrollUp {
+                bottom: 100px;
+}
+}
+@media (max-width: 670px) {
+#scrollUp {
+                font-size: xxx-large;
+                right: 9px;
+                height: 61px;
+                bottom: 161px;
+}
+#scrollDown{
+                font-size: xxx-large;
+                right: 9px;
+                bottom: 72px;
+}
+}

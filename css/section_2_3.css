@@ -120,10 +120,10 @@ img {
   
   .menu2 {
     position: absolute;
-    left: 0;
+    right: 31%;
     z-index: 900;
     width: 100%;
-    bottom: 0;
+    bottom: 5%;
   }
   
   .menu2 label {
@@ -131,7 +131,7 @@ img {
     display: inline-block;
     width: 16px;
     height: 16px;
-    background: #fff;
+    background: #948d8d;
     border-radius: 50px;
     margin: 0 .2em 1em;
     
@@ -189,6 +189,9 @@ img {
     .box2{
       height: 115vh;;
     }
+    .menu2{
+                position: revert;
+    }  
     
   }
   @media (min-width: 1150px) {

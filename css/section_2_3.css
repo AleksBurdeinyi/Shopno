@@ -213,7 +213,7 @@ img {
   }
   @media only screen and (max-width: 600px) {
     .box2 {
-        height: 85vh;
+        height: 100vh;
     }
 }
   /*Section_3*/

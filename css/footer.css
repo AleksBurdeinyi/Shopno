@@ -153,10 +153,10 @@ iframe {
 }
 .bottom-link i{
                 margin: auto;
-                color:whitesmoke;
+                color:rgb(89, 87, 87);
 }
 .bottom-link:hover{
-                background-color: #91ebe1;
+                background-color: #00fffb;
 }
 .botom2-text{
                 opacity: 0.6;
